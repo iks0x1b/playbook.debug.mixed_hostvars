@@ -1,0 +1,4 @@
+---
+  - name: transform
+    ansible.builtin.shell:
+      cmd: bash ./tasks/sedbutwithmoresteps.sh the_file_you_have.ini the_file_you_want.ini

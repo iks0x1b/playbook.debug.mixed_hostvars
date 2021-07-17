@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: transform some ini stuff
+      include: ./tasks/transform_ini.yaml
+      run_once: true
+

@@ -1,0 +1,6 @@
+---
+  - name: print one line per subelement in hostvar dict
+    ansible.builtin.debug:
+      msg: "I am printing one line for {{item}} in {{inventory_hostname}}"
+    loop: "{{vsyslist}}"
+

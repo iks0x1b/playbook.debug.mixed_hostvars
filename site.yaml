@@ -1,0 +1,10 @@
+---
+- hosts: all
+  connection: local
+  gather_facts: false
+
+  tasks:
+
+    - name: debug some conditionals and iterations
+      include: ./tasks/multivsys.yaml
+
